@@ -1,31 +1,37 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.headline {
+  animation: fadeIn 15s;
+}
+
+.headline2 {
+  animation: fadeIn 6s;
+}
+
+.headline3 {
+  animation-delay: 2s;
+  animation: fadeIn 7s;
+}
+
+.headline4 {
+  animation: fadeIn 2s;
+  background: rgb(254,254,238);
+  background: linear-gradient(146deg, rgba(254,254,238,1) 0%, rgba(64,68,73,1) 10%, rgba(213,215,218,1) 19%, rgba(84,87,94,1) 30%, rgba(228,229,231,1) 39%, rgba(105,109,120,1) 45%, rgba(228,229,231,1) 54%, rgba(129,131,136,1) 63%, rgba(228,229,231,1) 75%, rgba(150,151,154,1) 81%, rgba(228,229,231,1) 87%, rgba(139,143,154,1) 91%, rgba(228,229,231,1) 95%);
+  background-size: 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color:transparent;
+  animation: fadeIn 8s, changec 35s ease-in-out infinite;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +41,27 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes changec {
+  0% { background-position: 0% 25%;}
+  25% { background-position: 25% 50%;}
+  50% { background-position: 50% 100%; }
+  75% { background-position: 100% 50%;}
+  100% { background-position: 0% 50%; }
 }

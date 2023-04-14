@@ -1,11 +1,12 @@
 import React, { useRef } from "react";
 import Row from "react-bootstrap";
+import CarouselComponent from "./CarouselComponent";
 
 export default function MainPageComponent() {
     const myRef = useRef(null)
 
     const scrollTo = () => {
-        window.scrollTo(0, (myRef.current.offsetTop + myRef.current.getBoundingClientRect().top + window.screenY))
+        window.scrollTo(0, (myRef.current.offsetTop + window.screenY))
     }
 
   return (
@@ -23,15 +24,50 @@ export default function MainPageComponent() {
         <div ref={myRef} className="row align-items-center mt-5 pt-5">
             <div className="col-sm-6 mt-5">
                 <div className="fs-4 w-100 fst-italic fw-bold">I build fast responsive modern web applications.</div>
-                <div className="fs-6 mt-1">The tools used on the projects are JAVA, Spring Boot, MySQL, React, JavaScript, BootStrap, HTML5, CSS, Python, TensorFlow, etc.</div>
+                <div className="fs-6 mt-1 fw-lighter">The tools used on the projects are JAVA, Spring Boot, MySQL, React, JavaScript, BootStrap, HTML5, CSS, Python, TensorFlow, etc.</div>
             </div>
             <div className="col-sm-6 mt-5">
                 <img src="/1.png" alt="2" className="w-75"/>
             </div>
         </div>
-        <div>
-            <div>
-                <div>About me</div>
+
+        <div className="row align-items-center mt-5 pt-lg-5">
+            <div className="col-sm-7 mt-5">
+                <CarouselComponent />
+            </div>
+            <div className="col-sm-5 mt-5">
+                <div>
+                    <div className="fs-4 fst-italic fw-bold text-start mb-3 me-5">About me</div>
+                </div>
+                <div className="fs-6 fw-lighter text-start me-5">
+                Hi, there.
+                <br></br>
+                I was a senior banker in <i>JPMorgan Chase</i> prior to becoming a software engineer. During my years of banker life, I managed to be one of the top-performing bankers nationwide and received numerous recognitions and awards. Now I had become a software engineer and work with a global tech team on the trading floor!
+                </div>
+            </div>
+        </div>
+        <div className="row align-items-center mt-5 pt-lg-5">
+            <div className="text-center fs-3 fw-bolder border-bottom border-2 mb-2">Projects</div>
+        </div>
+        <div className="d-flex flex-wrap">
+            <div className="row m-5">
+                <div className="col-sm-4 text-center">
+                    <img src="/pic01.jpg" alt="placeholder" className="w-75"/>
+                    <p className="fs-5 mt-3">Github User Card</p>
+                    <span className="fs-6">Search github username and generate user infomation</span>
+                    <a className="btn btn-sm btn-dark rounded-4" href="/gitcard/index.html">View</a>
+                </div>
+                <div className="col-sm-4 text-center">
+                    <img src="/pic01.jpg" alt="placeholder" className="w-75"/>
+                    <p className="fs-5 mt-3">Github User Card</p>
+                    <span className="fs-6">Search github username and generate user infomation</span>
+                </div>
+                <div className="col-sm-4 text-center">
+                    <img src="/pic01.jpg" alt="placeholder" className="w-75"/>
+                    <p className="fs-5 mt-3">Github User Card</p>
+                    <span className="fs-6">Search github username and generate user infomation</span>
+                    
+                </div>
             </div>
         </div>
     </div>

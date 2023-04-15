@@ -1,13 +1,12 @@
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap"
 export default function HeaderComponent() {
   return (
-    <Navbar collapseOnSelect expand="sm" bg="dark" variant="dark">
+    <Navbar collapseOnSelect expand="sm" bg="dark" variant="dark" className="bg-gradient p-0">
       <Container>
-        <Navbar.Brand href="/">Zheng</Navbar.Brand>
+        <Navbar.Brand href="/" className="fw-bolder">Zheng</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#features">Personal</Nav.Link>
             <Nav.Link href="#pricing">About</Nav.Link>
             {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">About</NavDropdown.Item>

@@ -22,7 +22,7 @@ export default function MainPageComponent() {
         <div className="pt-5 mt-5 mb-5 pb-5">
             <a className="btn btn-sm bg-dark text-light" onClick={scrollTo}>Discover</a>
         </div>
-        <div ref={myRef} className="row align-items-center mt-5 pt-5">
+        <div ref={myRef} className="row align-items-center">
             <div className="col-sm-6 mt-5">
                 <div className="fs-4 w-100 fst-italic fw-bold">I build fast responsive modern web applications.</div>
                 <div className="fs-6 mt-1 fw-lighter">The tools used on the projects are JAVA, Spring Boot, MySQL, React, JavaScript, BootStrap, HTML5, CSS, Python, TensorFlow, etc.</div>
@@ -37,18 +37,16 @@ export default function MainPageComponent() {
                 <CarouselComponent />
             </div>
             <div className="col-sm-5 mt-5">
-                <div>
-                    <div className="fs-4 fst-italic fw-bold text-start mb-3 me-5">About me</div>
-                </div>
-                <div className="fs-6 fw-lighter text-start me-5">
-                Hi, there.
-                <br></br>
-                I was a senior banker in <i>JPMorgan Chase</i> prior to becoming a software engineer. During my years of banker life, I managed to be one of the top-performing bankers nationwide and received numerous recognitions and awards. Now I had become a software engineer and work with a global tech team on the trading floor!
+                <div className="fs-4 fst-italic fw-bold text-center mb-3">About me</div>
+                <div className="fs-6 fw-lighter text-start mt-5">
+                    Hi, there.
+                    <br></br>
+                    I was a senior banker in <i>JPMorgan Chase</i> prior to becoming a software engineer. During my years of banker life, I managed to be one of the top-performing bankers nationwide and received numerous recognitions and awards. Now I had become a software engineer and work with a global tech team on the trading floor!
                 </div>
             </div>
         </div>
         <div className="row align-items-center mt-5 pt-lg-5">
-            <div className="text-center fs-3 fw-bolder border-bottom border-2 mb-2">Projects</div>
+            <div className="text-center fs-4 fw-bolder border-1 border-bottom border-dark mb-2 fst-italic">Projects</div>
         </div>
         <div className="d-flex flex-wrap">
             <div className="row m-5">

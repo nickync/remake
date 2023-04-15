@@ -11,6 +11,7 @@ function App() {
       <Router>
         <Routes>
           <Route path='/' element={ <MainPageComponent />} />
+          {/* <Route path='/gitcard/index.html' element={"/gitcard/index.html"} /> */}
         </Routes>
       </Router>
     </div>

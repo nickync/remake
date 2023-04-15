@@ -83,7 +83,7 @@ export default function MainPageComponent() {
                     <img src="/pic01.jpg" alt="placeholder" className="w-75"/>
                     <p className="fs-5 mt-3">Sherlock's blog</p>
                     <span className="fs-6">A simple blog site using flexbox.</span>
-                    <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/blog/Homepage.html"}>View</button>
+                    <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/blog/index.html"}>View</button>
                 </div>
             </div>
         </div>

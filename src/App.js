@@ -1,14 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
 import HeaderComponent from './component/HeaderComponent';
 import MainPageComponent from './component/MainPageComponent';
+import { Routes, BrowserRouter as Router, Route, Navigate } from 'react-router-dom';
+
 
 function App() {
   return (
     <div className="App">
       <HeaderComponent />
-      <MainPageComponent />
-      
+      <Router>
+        <Routes>
+          <Route path='/' element={ <MainPageComponent />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import Row from "react-bootstrap";
 import CarouselComponent from "./CarouselComponent";
+import { useNavigate } from "react-router-dom";
 
 export default function MainPageComponent() {
     const myRef = useRef(null)
@@ -51,22 +52,38 @@ export default function MainPageComponent() {
         </div>
         <div className="d-flex flex-wrap">
             <div className="row m-5">
-                <div className="col-sm-4 text-center">
+                <div className="col-sm-4 text-center flex-column d-flex align-items-center mb-5">
                     <img src="/pic01.jpg" alt="placeholder" className="w-75"/>
                     <p className="fs-5 mt-3">Github User Card</p>
-                    <span className="fs-6">Search github username and generate user infomation</span>
-                    <a className="btn btn-sm btn-dark rounded-4" href="/gitcard/index.html">View</a>
+                    <span className="fs-6">Search github username and generate user infomation. Build with React.</span>
+                    <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/gitcard/index.html"}>View</button>
                 </div>
-                <div className="col-sm-4 text-center">
-                    <img src="/pic01.jpg" alt="placeholder" className="w-75"/>
-                    <p className="fs-5 mt-3">Github User Card</p>
-                    <span className="fs-6">Search github username and generate user infomation</span>
+                <div className="col-sm-4 text-center d-flex flex-column align-items-center mb-5">
+                    <img src="/restaurant.gif" alt="placeholder" className="w-75 h-100"/>
+                    <p className="fs-5 mt-3">Restaurant</p>
+                    <span className="fs-6">Zen's restaurant. Build with HTML and CSS.</span>
+                    <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/restaurant/index.html"}>View</button>
                 </div>
-                <div className="col-sm-4 text-center">
+                <div className="col-sm-4 text-center d-flex flex-column align-items-center mb-5">
+                    <img src="/astronomy.gif" alt="placeholder" className="w-75 h-100"/>
+                    <p className="fs-5 mt-3">Astronomy of the Day</p>
+                    <span className="fs-6">Astronomy of the day, powered by NASA API. The website generates the Astronomy Picture of the Day. Build with Javascript</span>
+                    <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/astronomy/space.html"}>View</button>
+                </div>
+                <div className="col-sm-4 text-center d-flex flex-column align-items-center mb-5">
+                    <img src="/pt.gif" alt="placeholder" className="w-75"/>
+                    <p className="fs-5 mt-3">Personal Trainer</p>
+                    <span className="fs-6">A fullstack web application build with Spring Boot 3, React 18, JWT authentication, BootStrap 5, and H2 in memeory database. Deployed through AWS S3 and Elastic Beanstalk.</span>
+                    <div>
+                    <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "http://pt-front.s3-website-us-east-1.amazonaws.com/"}>View</button>
+                    <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "http://pt-front.s3-website-us-east-1.amazonaws.com/"}>Repo</button>
+                    </div>
+                </div>
+                <div className="col-sm-4 text-center d-flex flex-column align-items-center mb-5">
                     <img src="/pic01.jpg" alt="placeholder" className="w-75"/>
-                    <p className="fs-5 mt-3">Github User Card</p>
-                    <span className="fs-6">Search github username and generate user infomation</span>
-                    
+                    <p className="fs-5 mt-3">Sherlock's blog</p>
+                    <span className="fs-6">A simple blog site using flexbox.</span>
+                    <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/blog/Homepage.html"}>View</button>
                 </div>
             </div>
         </div>

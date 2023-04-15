@@ -3,7 +3,7 @@ export default function HeaderComponent() {
   return (
     <Navbar collapseOnSelect expand="sm" bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand href="#home">Zheng</Navbar.Brand>
+        <Navbar.Brand href="/">Zheng</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">

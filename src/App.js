@@ -3,7 +3,7 @@ import AboutComponent from './component/AboutComponent';
 import FooterComponent from './component/FooterComponent';
 import HeaderComponent from './component/HeaderComponent';
 import MainPageComponent from './component/MainPageComponent';
-import { Routes, BrowserRouter as Router, Route, Navigate } from 'react-router-dom';
+import { Routes, HashRouter as Router, Route, Navigate } from 'react-router-dom';
 
 
 function App() {

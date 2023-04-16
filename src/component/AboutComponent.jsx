@@ -8,6 +8,9 @@ export default function AboutComponent() {
         <div className="fs-3">
             Questions?
         </div>
+        <div className="fs-4">
+            Let's connect.
+        </div>
         <div>
             <a className="text-light" href="mailto:nicknyc9024@gmail.com"><FontAwesomeIcon icon={faEnvelope} /></a>
             <a className="text-light ms-3" href="https://twitter.com/24Shaneli"><FontAwesomeIcon icon={faTwitter} /></a>

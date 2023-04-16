@@ -9,8 +9,8 @@ import { Routes, BrowserRouter as Router, Route, Navigate } from 'react-router-d
 function App() {
   return (
     <div className="App">
-      <HeaderComponent />
       <Router>
+        <HeaderComponent />
         <Routes>
           <Route path='/' element={ <MainPageComponent />} />
           <Route path='/about' element={ <AboutComponent />} />

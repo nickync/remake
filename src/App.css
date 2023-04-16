@@ -5,6 +5,9 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.expand {
+  min-height: 90vh;
+}
 
 .App-link {
   color: #61dafb;

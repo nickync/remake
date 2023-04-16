@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Row from "react-bootstrap";
 import CarouselComponent from "./CarouselComponent";
 import { useNavigate } from "react-router-dom";
@@ -6,7 +6,11 @@ import { useNavigate } from "react-router-dom";
 export default function MainPageComponent() {
     const [loading, setLoading] = useState(true)
 
-    
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false)
+        }, 1999)
+    },[])
 
     const myRef = useRef(null)
     const scrollTo = () => {
@@ -15,11 +19,11 @@ export default function MainPageComponent() {
 
   return (
     <div className="container-fluid">
-        {
+      {
         loading
         ?
         <div className="d-flex justify-content-center align-items-center expand">
-            <h1 style={{fontSize:'5rem'}}>ZEN</h1>
+            <h1 style={{fontSize:'5rem'}} className="d-flex landing">ZEN</h1>
         </div>
         :
         <>
@@ -97,7 +101,7 @@ export default function MainPageComponent() {
                 </div>
             </div>
             </>
-            }
+          }
     </div>
   )
 }

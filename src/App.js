@@ -1,4 +1,5 @@
 import './App.css';
+import AboutComponent from './component/AboutComponent';
 import FooterComponent from './component/FooterComponent';
 import HeaderComponent from './component/HeaderComponent';
 import MainPageComponent from './component/MainPageComponent';
@@ -12,7 +13,7 @@ function App() {
       <Router>
         <Routes>
           <Route path='/' element={ <MainPageComponent />} />
-          {/* <Route path='/gitcard/index.html' element={"/gitcard/index.html"} /> */}
+          <Route path='/about' element={ <AboutComponent />} />
         </Routes>
       </Router>
       <FooterComponent />

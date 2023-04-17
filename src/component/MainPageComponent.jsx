@@ -34,9 +34,13 @@ export default function MainPageComponent() {
                 <div className="headline mt-2 fs-1">Hi, I'm Zheng </div>
                 <div><span className="headline2 fs-1">A</span> <span className="headline3">full stack</span> <span className="headline4">software engineer.</span></div>
             </h1>
+            
             <div className="pt-5 mt-5 mb-5 pb-5">
                 <a className="btn btn-sm bg-dark text-light" onClick={scrollTo}>Discover</a>
             </div>
+            {/* <div style={{height:'5rem', left:0, position:'absolute', backgroundColor:'transparent', width:'100%'}}>
+                <div></div>
+            </div> */}
             <div ref={myRef} className="row align-items-center">
                 <div className="col-sm-6 mt-5">
                     <div className="fs-4 w-100 fst-italic fw-bold">I build fast responsive modern web applications.</div>

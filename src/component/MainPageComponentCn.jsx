@@ -2,12 +2,9 @@ import React, { useEffect, useRef, useState } from "react";
 import Row from "react-bootstrap";
 import CarouselComponent from "./CarouselComponent";
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "./AuthContext";
-import MainPageComponentCn from "./MainPageComponentCn";
 
-export default function MainPageComponent() {
+export default function MainPageComponentCn() {
     const [loading, setLoading] = useState(true)
-    const authContext = useAuth()
 
     useEffect(() => {
         setTimeout(() => {
@@ -29,26 +26,25 @@ export default function MainPageComponent() {
             <h1 style={{fontSize:'5rem'}} className="d-flex landing">ZEN</h1>
         </div>
         :
-        authContext.lang === 'en' ?
         <>
             <div className="mt-5">
                 <img src="/gifgit.gif" alt="" />
             </div>
             <h1>
-                <div className="headline mt-2 fs-1">Hi, I'm Zheng </div>
-                <div><span className="headline2 fs-1">A</span> <span className="headline3">full stack</span> <span className="headline4">software engineer.</span></div>
+                <div className="headline mt-2 fs-1"> 你好，我是正 </div>
+                <div><span className="headline2 fs-1">一个全栈</span> <span className="headline4">程序猿🦍。</span></div>
             </h1>
             
             <div className="pt-5 mt-5 mb-5 pb-5">
-                <a className="btn btn-sm bg-dark text-light" onClick={scrollTo}>Discover</a>
+                <a className="btn btn-sm bg-dark text-light" onClick={scrollTo}>更多</a>
             </div>
             {/* <div style={{height:'5rem', left:0, position:'absolute', backgroundColor:'transparent', width:'100%'}}>
                 <div></div>
             </div> */}
             <div ref={myRef} className="row align-items-center">
                 <div className="col-sm-6 mt-5">
-                    <div className="fs-4 w-100 fst-italic fw-bold">I build fast responsive modern web applications.</div>
-                    <div className="fs-6 mt-1 fw-lighter">The tools used on the projects are JAVA, Spring Boot, MySQL, React, JavaScript, BootStrap, HTML5, CSS, Python, TensorFlow, etc.</div>
+                    <div className="fs-4 w-100 fst-italic fw-bold">我致力于构建开发快速响应式网站。</div>
+                    <div className="fs-6 mt-1 fw-lighter">我应用到的技术栈有 JAVA，Spring Boot，MySQL，React，JavaScript，BootStrap，HTML5，CSS，Python，TensorFlow 等等。</div>
                 </div>
                 <div className="col-sm-6 mt-5">
                     <img src="/1.png" alt="2" className="w-75"/>
@@ -60,11 +56,11 @@ export default function MainPageComponent() {
                     <CarouselComponent />
                 </div>
                 <div className="col-sm-5 mt-5">
-                    <div className="fs-4 fst-italic fw-bold text-center mb-3">About me</div>
+                    <div className="fs-4 fst-italic fw-bold text-center mb-3">关于我</div>
                     <div className="fs-6 fw-lighter text-start mt-5">
-                        Hi, there.
+                        你好，
                         <br></br>
-                        I was a senior banker in <i>JPMorgan Chase</i> prior to becoming a software engineer. During my years of banker life, I managed to be one of the top-performing bankers nationwide and received numerous recognitions and awards. Now I had become a software engineer and work with a global tech team on the trading floor!
+                        在成为软件工程师之前，我曾经是<i>摩根大通银行</i>的资深客户经理。在我多年的客户经理生涯中，我有幸成为全美最杰出的客户经理之一，并多次获得各种奖项与荣誉。而现在，我作为一名软件开发者加入了全球外汇期权交易开发者团队！
                     </div>
                 </div>
             </div>
@@ -75,42 +71,40 @@ export default function MainPageComponent() {
                 <div className="row m-5">
                     <div className="col-sm-4 text-center flex-column d-flex align-items-center mb-5">
                         <img src="/pic01.jpg" alt="placeholder" className="w-75"/>
-                        <p className="fs-5 mt-3">Github User Card</p>
-                        <span className="fs-6">Search github username and generate user infomation. Build with React.</span>
-                        <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/gitcard/index.html"}>View</button>
+                        <p className="fs-5 mt-3">Github </p>
+                        <span className="fs-6">搜索Github用户并显示其资料。技术栈：React</span>
+                        <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/gitcard/index.html"}>展示</button>
                     </div>
                     <div className="col-sm-4 text-center d-flex flex-column align-items-center mb-5">
                         <img src="/restaurant.gif" alt="placeholder" className="w-75 h-100"/>
-                        <p className="fs-5 mt-3">Restaurant</p>
-                        <span className="fs-6">Zen's restaurant. Build with HTML and CSS.</span>
-                        <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/restaurant/index.html"}>View</button>
+                        <p className="fs-5 mt-3">餐馆</p>
+                        <span className="fs-6">简易餐馆网站. 技术栈：HTML，CSS.</span>
+                        <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/restaurant/index.html"}>展示</button>
                     </div>
                     <div className="col-sm-4 text-center d-flex flex-column align-items-center mb-5">
                         <img src="/astronomy.gif" alt="placeholder" className="w-75 h-100"/>
-                        <p className="fs-5 mt-3">Astronomy of the Day</p>
-                        <span className="fs-6">Astronomy of the day, powered by NASA API. The website generates the Astronomy Picture of the Day. Build with Javascript</span>
-                        <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/astronomy/space.html"}>View</button>
+                        <p className="fs-5 mt-3">今日的太空</p>
+                        <span className="fs-6">通过NASA API抓取太空每日一图。技术栈：Javascript</span>
+                        <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/astronomy/space.html"}>展示</button>
                     </div>
                     <div className="col-sm-4 text-center d-flex flex-column align-items-center mb-5">
                         <img src="/pt.gif" alt="placeholder" className="w-75"/>
-                        <p className="fs-5 mt-3">Personal Trainer</p>
-                        <span className="fs-6">A fullstack web application build with Spring Boot 3, React 18, JWT authentication, BootStrap 5, and H2 in memeory database. Deployed through AWS S3 and Elastic Beanstalk.</span>
+                        <p className="fs-5 mt-3">健身培训师</p>
+                        <span className="fs-6">全栈健身培训师网站，培训师与客户可以注册登录并建立培训计划等等。技术栈：Spring Boot 3，React 18，JWT authentication，BootStrap，H2 in memeory database，AWS S3 and Elastic Beanstalk。</span>
                         <div>
-                        <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "http://pt-front.s3-website-us-east-1.amazonaws.com/"}>View</button>
+                        <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "http://pt-front.s3-website-us-east-1.amazonaws.com/"}>展示</button>
                         <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "http://pt-front.s3-website-us-east-1.amazonaws.com/"}>Repo</button>
                         </div>
                     </div>
                     <div className="col-sm-4 text-center d-flex flex-column align-items-center mb-5">
                         <img src="/pic01.jpg" alt="placeholder" className="w-75"/>
-                        <p className="fs-5 mt-3">Sherlock's blog</p>
-                        <span className="fs-6">A simple blog site using flexbox.</span>
-                        <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/blog/index.html"}>View</button>
+                        <p className="fs-5 mt-3">福尔摩斯</p>
+                        <span className="fs-6">福尔摩斯资料。</span>
+                        <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/blog/index.html"}>展示</button>
                     </div>
                 </div>
             </div>
             </>
-            :
-            <MainPageComponentCn />
           }
     </div>
   )

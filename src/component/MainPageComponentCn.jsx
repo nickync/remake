@@ -65,7 +65,7 @@ export default function MainPageComponentCn() {
                 </div>
             </div>
             <div className="row align-items-center mt-5 pt-lg-5">
-                <div className="text-center fs-4 fw-bolder border-1 border-bottom border-dark mb-2 fst-italic">Projects</div>
+                <div className="text-center fs-4 fw-bolder border-1 border-bottom border-dark mb-2 fst-italic">项目</div>
             </div>
             <div className="d-flex flex-wrap">
                 <div className="row m-5">

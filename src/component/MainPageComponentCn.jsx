@@ -31,7 +31,7 @@ export default function MainPageComponentCn() {
                 <img src="/gifgit.gif" alt="" />
             </div>
             <h1>
-                <div className="headline mt-2 fs-1"> 你好，我是正 </div>
+                <div className="headline mt-2 fs-1"> 你好，我是 </div>
                 <div><span className="headline2 fs-1">一个全栈</span> <span className="headline4">程序猿🦍。</span></div>
             </h1>
             

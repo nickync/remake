@@ -89,7 +89,7 @@ export default function MainPageComponent() {
                         <img src="/astronomy.gif" alt="placeholder" className="w-75 h-100"/>
                         <p className="fs-5 mt-3">Astronomy of the Day</p>
                         <span className="fs-6">Astronomy of the day, powered by NASA API. The website generates the Astronomy Picture of the Day. Build with Javascript</span>
-                        <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/astronomy/space.html"}>View</button>
+                        <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/astronomy/index.html"}>View</button>
                     </div>
                     <div className="col-sm-4 text-center d-flex flex-column align-items-center mb-5">
                         <img src="/pt.gif" alt="placeholder" className="w-75"/>

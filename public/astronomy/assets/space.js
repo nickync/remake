@@ -43,12 +43,12 @@ function fetchAPI() {
             console.log(data)
             if (data.media_type === 'video') {
                 document.querySelector('iframe').src = data.url
-                document.getElementById('vod').style.display = 'block'
+                // document.getElementById('vod').style.display = 'block'
                 document.querySelector('img').style.display = 'none'
             } else {
                 document.querySelector('img').src = data.url
                 document.querySelector('iframe').style.display = 'none'
-                document.querySelector('img').style.display = 'block'
+                // document.querySelector('img').style.display = 'block'
             }
             document.querySelector('#title').innerText = data.title
             

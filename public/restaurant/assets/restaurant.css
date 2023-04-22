@@ -5,14 +5,15 @@
     font-family: 'Roboto', Times, serif
 }
 
-.nav {
-    background-color: rgb(52, 52, 52);
-    position:fixed;
-    width: 100%;
-    opacity: 85%;
-
+#logo{
+    width: 25px;
+    height: 25px;
 }
 
+#header1 {
+    position: relative;
+    z-index: 1031;
+}
 
 .nav ol {
     display: flex;
@@ -38,49 +39,18 @@
     max-width: 25%;
 }
 
-/* .nav li>img:hover {
-    transform: rotateY(45deg);
-	/* animation: rotateAnimation 0.5s linear infinite; */
-    /* background-color: rgb(52, 52, 52); */
-    /* opacity: 85%; */
-    
-/* } */ 
-
-/* @keyframes rotateAnimation {
-	from {transform: rotateY(45deg);}
-	to {transform: rotateY(225deg);}
-} */
-
-.nav li {
-    /* border: 1px solid rgb(145, 137, 123); */
-    /* border-left: 1px solid rgb(145, 137, 123); */
-    /* padding-right: 1rem;
-    padding-left: 1rem; */
-
-}
-
 .nav a:hover {
     transition: all 3s ease;
     font-style: italic;
     color:white
 }
 
-.background {
-    background-image: url(/restaurant/images/1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    object-fit: fill;
-    height: 40rem;
-}
 .main {
     padding-top: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background: rgb(156,240,237);
-    background: linear-gradient(167deg, rgba(156,240,237,1) 0%, rgba(43,161,190,1) 50%, rgba(190,145,43,1) 100%);
-     */
     margin-bottom: 3rem;
     z-index: 2;
 }

@@ -64,7 +64,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color:transparent;
-  animation: fadeIn 8s, changec 35s ease-in-out infinite;
+  animation: fadeIn 4s, changec 20s ease-in-out infinite;
 }
 
 @keyframes App-logo-spin {

@@ -108,6 +108,7 @@ export default function MainPageComponent() {
                     </div>
                 </div>
             </div>
+            <button className="btn btn-sm btn-dark fw-bold text-secondary" onClick={() => window.scrollTo({top:0})}>Top</button>
             </>
             :
             <MainPageComponentCn />

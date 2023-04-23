@@ -39,10 +39,6 @@
       }
 } */
 
-#body {
-
-}
-
 #header-title {
     text-shadow: rgb(116, 119, 215) 2px 2px 2px;
 }
@@ -53,7 +49,8 @@
 }
 
 @media only screen and (max-width: 900px) {
-    body {
+    header {
+      background: none;
       background-color: rgb(16, 20, 21);
     }
   }

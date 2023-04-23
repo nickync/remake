@@ -70,7 +70,7 @@ export default function MainPageComponentCn() {
             <div className="d-flex flex-wrap">
                 <div className="row m-5">
                     <div className="col-sm-4 text-center flex-column d-flex align-items-center mb-5">
-                        <img src="/pic01.jpg" alt="placeholder" className="w-75"/>
+                        <img src="/gitcard.gif" alt="placeholder" className="w-75"/>
                         <p className="fs-5 mt-3">Github </p>
                         <span className="fs-6">搜索Github用户并显示其资料。技术栈：React</span>
                         <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/gitcard/index.html"}>展示</button>
@@ -82,7 +82,7 @@ export default function MainPageComponentCn() {
                         <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/restaurant/index.html"}>展示</button>
                     </div>
                     <div className="col-sm-4 text-center d-flex flex-column align-items-center mb-5">
-                        <img src="/astronomy.gif" alt="placeholder" className="w-75 h-100"/>
+                        <img src="/astro.gif" alt="placeholder" className="w-75 h-100"/>
                         <p className="fs-5 mt-3">今日的太空</p>
                         <span className="fs-6">通过NASA API抓取太空每日一图。技术栈：Javascript</span>
                         <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/astronomy/index.html"}>展示</button>

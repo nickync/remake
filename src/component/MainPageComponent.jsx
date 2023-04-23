@@ -74,7 +74,7 @@ export default function MainPageComponent() {
             <div className="d-flex flex-wrap">
                 <div className="row m-5">
                     <div className="col-sm-4 text-center flex-column d-flex align-items-center mb-5">
-                        <img src="/pic01.jpg" alt="placeholder" className="w-75"/>
+                        <img src="/gitcard.gif" alt="placeholder" className="w-75"/>
                         <p className="fs-5 mt-3">Github User Card</p>
                         <span className="fs-6">Search github username and generate user infomation. Build with React.</span>
                         <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/gitcard/index.html"}>View</button>
@@ -95,7 +95,7 @@ export default function MainPageComponent() {
                         <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/restaurant/index.html"}>View</button>
                     </div>
                     <div className="col-sm-4 text-center d-flex flex-column align-items-center mb-5">
-                        <img src="/astronomy.gif" alt="placeholder" className="w-75 h-100"/>
+                        <img src="/astro.gif" alt="placeholder" className="w-75 h-100"/>
                         <p className="fs-5 mt-3">Astronomy of the Day</p>
                         <span className="fs-6">Astronomy of the day, powered by NASA API. The website generates the Astronomy Picture of the Day. Build with Javascript</span>
                         <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/astronomy/index.html"}>View</button>

@@ -76,6 +76,15 @@ export default function MainPageComponentCn() {
                         <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/gitcard/index.html"}>展示</button>
                     </div>
                     <div className="col-sm-4 text-center d-flex flex-column align-items-center mb-5">
+                        <img src="/pt.gif" alt="placeholder" className="w-75"/>
+                        <p className="fs-5 mt-3">健身培训师</p>
+                        <span className="fs-6">全栈健身培训师网站，培训师与客户可以注册登录并建立培训计划等等。技术栈：Spring Boot 3，React 18，JWT authentication，BootStrap，H2 in memeory database，AWS S3 and Elastic Beanstalk。</span>
+                        <div>
+                        <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "http://pt-front.s3-website-us-east-1.amazonaws.com/"}>展示</button>
+                        <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "http://pt-front.s3-website-us-east-1.amazonaws.com/"}>Repo</button>
+                        </div>
+                    </div>
+                    <div className="col-sm-4 text-center d-flex flex-column align-items-center mb-5">
                         <img src="/restaurant.gif" alt="placeholder" className="w-75 h-100"/>
                         <p className="fs-5 mt-3">餐馆</p>
                         <span className="fs-6">简易餐馆网站. 技术栈：HTML，CSS.</span>
@@ -86,15 +95,6 @@ export default function MainPageComponentCn() {
                         <p className="fs-5 mt-3">星空</p>
                         <span className="fs-6">通过NASA API抓取太空每日一图。技术栈：Javascript</span>
                         <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/astronomy/index.html"}>展示</button>
-                    </div>
-                    <div className="col-sm-4 text-center d-flex flex-column align-items-center mb-5">
-                        <img src="/pt.gif" alt="placeholder" className="w-75"/>
-                        <p className="fs-5 mt-3">健身培训师</p>
-                        <span className="fs-6">全栈健身培训师网站，培训师与客户可以注册登录并建立培训计划等等。技术栈：Spring Boot 3，React 18，JWT authentication，BootStrap，H2 in memeory database，AWS S3 and Elastic Beanstalk。</span>
-                        <div>
-                        <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "http://pt-front.s3-website-us-east-1.amazonaws.com/"}>展示</button>
-                        <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "http://pt-front.s3-website-us-east-1.amazonaws.com/"}>Repo</button>
-                        </div>
                     </div>
                     <div className="col-sm-4 text-center d-flex flex-column align-items-center mb-5">
                         <img src="/pic01.jpg" alt="placeholder" className="w-75"/>

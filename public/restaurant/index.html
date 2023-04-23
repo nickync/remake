@@ -16,8 +16,8 @@
     <link rel="shortcut icon" type="/images/favicon_io" href="images/favicon.ico">
     <title>Restaurant</title>
 </head>
-<body class="bg-black container-fluid">
-    <nav class="navbar w-100 navbar-expand-md bg-light navbar-light bg-gradient fixed-top">
+<body class="bg-black w-100">
+    <nav id="navbar-item" class="navbar navbar-expand-sm bg-light navbar-light bg-gradient fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img id="logo" class="nav-link" src="/restaurant/images/logo.png" alt="logo" /></li>
             </a>
@@ -25,62 +25,59 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav me-0 pe-0 mb-2 mb-lg-0">
+                <ul id="menu-item" class="navbar-nav me-0 pe-0 mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="#" >Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" >About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#" >Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" >Order Now</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" >Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#order" >Order Now</a></li>
                     <li class="nav-item"><a class="nav-link" href="#" >Location</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about" >About Us</a></li>
                     <li class="nav-item"><a href="#" class="fa fa-shopping-cart nav-link"></a></li>
-                    <li class="nav-item"><a href="#" class="fa fa-search nav-link"></a></li>
+                    <li class="nav-item"><a href="#search" class="fa fa-search nav-link"></a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <div class="d-flex justify-content-center">
-        <img class="img-fluid w-75" src="./images/1.jpg"/>
+        <img class="img-fluid" src="./images/1.jpg"/>
     </div>
 
-   <div id="header1" class="main bg-black vw-100">
+   <div id="header1" class="main bg-black d-flex flex-column align-items-center justify-content-center p-5">
        <h1 class="headlines">Welcome To Our Cuisine Restaurant</h1>
-       <form>
-           <input value="Search Food">
-           <button>Search</button>
+       <form class="d-flex flex-row form-group py-3">
+           <input id="search" class="input-group-sm form-control" placeholder="Search Food">
+           <button class="btn btn-sm">Search</button>
        </form>
        <div class="icons">
-            <i class="fa fa-facebook"><span>252k</span></i>
-            <i class="fa fa-twitter"><span>62k</span></i>
-            <i class="fa fa-instagram"><span>55k</span></i>
+            <i class="fa fa-facebook me-1"><span>252k</span></i>
+            <i class="fa fa-twitter me-1"><span>62k</span></i>
+            <i class="fa fa-instagram me-1"><span>55k</span></i>
         </div>
    </div>
 
    <div class="aboutus">
-
-       <div class="gallery">
-           <img src="/restaurant/images/1.jpg">
-           <img src="/restaurant/images/2.jpg">
+       <div class="d-flex flex-row flex-wrap">
+           <img class="img-fluid" src="/restaurant/images/1.jpg">
+           <img class="img-fluid" src="/restaurant/images/2.jpg">
            <!-- <img src="/images/4.jpg"> -->
        </div>
 
-       <div class="history">
-            <p>About Us</p>
-            <h1 class="headlines">Discover Our Restaurant History</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id cupiditate praesentium soluta fuga est provident pariatur in rem odit, eum <br>recusandae blanditiis reiciendis itaque modi beatae temporibus repudiandae facere officiis!</p>
+       <div id="about" class="history mt-5 pt-3">
+            <h1 class="headlines text-center">Discover Our Restaurant History</h1>
+            <p class="text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id cupiditate praesentium soluta fuga est provident pariatur in rem odit, eum <br>recusandae blanditiis reiciendis itaque modi beatae temporibus repudiandae facere officiis!</p>
        </div>
    </div>
 
-   <div class="order">
-        <span>Order Online Now</span>
+   <div id="order" class="d-flex justify-content-center flex-column align-items-center">
+        <!-- <span>Order Online Now</span> -->
         <h1 class="headlines">Our Specialty Cuisine</h1>
-        <ol>
-            <li><a href="#">Breakfast</a></li>
-            <li><a href="#">Lunch</a></li>
-            <li><a href="#">Dinner</a></li>
-            <li><a href="#">Dessert</a></li>
-            <li><a href="#">Shake</a></li>
-        </ol>
+        <div class="d-flex flex-row">
+            <button class="btn btn-cust me-2 mb-1">Breakfast</button>
+            <button class="btn btn-cust me-2 mb-1">Lunch</button>
+            <button class="btn btn-cust me-2 mb-1">Dinner</button>
+            <button class="btn btn-cust me-2 mb-1">Dessert</button>
+            <button class="btn btn-cust me-2 mb-1">Shake</button>
+        </div>
         <div class="dishes">
             <img src="images/pasta.jpg" alt="pasta">
             <img src="images/pic2.jpg" alt="pasta">
@@ -92,11 +89,11 @@
    <footer>
         <hr>
         <div id="footer">
-            <p>© 2022 Zheng. All Rights Reserved.</p>
-            <p>Contact Info: (123) 456-7890</p>
+            <p class="mb-0">© 2022 Zheng. All Rights Reserved.</p>
+            <p class="mb-0">Contact Info: (123) 456-7890</p>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
 </body>
 </html>

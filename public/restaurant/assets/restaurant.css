@@ -15,7 +15,69 @@
     z-index: 1031;
 }
 
-.nav ol {
+.headlines { 
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    padding-bottom: 3rem;
+    color: rgb(190, 146, 43);
+    text-shadow: whitesmoke 1px 1px 1px;
+}
+
+.main input {
+    color:rgb(190, 146, 43)
+}
+
+#navbar-item {
+    background-color: rgb(190, 146, 43) !important;
+}
+
+#menu-item>li>a:hover {
+    color: antiquewhite;
+}
+
+.main button {
+    background-color: rgb(190, 146, 43);
+    color: white;
+    border-radius: 15px;
+}
+
+.btn-cust {
+    background-color: rgb(190, 146, 43) !important;
+    color: white !important;
+    border-radius: 5px;
+}
+
+.btn-cust:hover {
+    background-color: rgb(167, 157, 135) !important;
+}
+
+.icons > * {
+    color: rgb(190, 146, 43);
+}
+
+.icons i {
+    margin-right: 1rem;
+}
+
+.aboutus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    padding-top: 3rem;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    color:white;
+    background-color: rgb(190, 146, 43);
+}
+
+/* .nav ol {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -56,38 +118,6 @@
 }
 
 
-.headlines { 
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bolder;
-    padding-bottom: 3rem;
-    color: rgb(190, 146, 43);
-}
-
-.main input {
-    color:rgb(190, 146, 43)
-}
-.main button {
-    margin-bottom: 3rem;
-    background-color: rgb(190, 146, 43);
-    color: white;
-    border-radius: 15%;
-}
-
-.icons > * {
-    color: rgb(190, 146, 43);
-}
-
-.icons i {
-    margin-right: 1rem;
-}
-
-
-.aboutus {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 .gallery {
     display:flex;
@@ -155,13 +185,4 @@
     border-radius: 25%;
 }
 
-footer {
-    padding-top: 3rem;
-}
-
-#footer {
-    display: flex;
-    justify-content: space-between;
-    color:white;
-    background-color: rgb(190, 146, 43);
-}
+ */

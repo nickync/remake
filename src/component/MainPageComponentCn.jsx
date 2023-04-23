@@ -83,7 +83,7 @@ export default function MainPageComponentCn() {
                     </div>
                     <div className="col-sm-4 text-center d-flex flex-column align-items-center mb-5">
                         <img src="/astro.gif" alt="placeholder" className="w-75 h-100"/>
-                        <p className="fs-5 mt-3">今日的太空</p>
+                        <p className="fs-5 mt-3">星空</p>
                         <span className="fs-6">通过NASA API抓取太空每日一图。技术栈：Javascript</span>
                         <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/astronomy/index.html"}>展示</button>
                     </div>

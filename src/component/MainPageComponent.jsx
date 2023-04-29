@@ -21,7 +21,7 @@ export default function MainPageComponent() {
     }
 
   return (
-    <div className="container-fluid">
+    <div className="container-fluid g-0">
       {
         loading
         ?
@@ -31,27 +31,29 @@ export default function MainPageComponent() {
         :
         authContext.lang === 'en' ?
         <>
-            <div className="mt-5">
-                <img src="/gifgit.gif" alt="" />
-            </div>
-            <h1>
-                <div className="headline mt-2 fs-1">Hi, I'm Zheng </div>
-                <div><span className="headline2 fs-1">A</span> <span className="headline3">full stack</span> <span className="headline4">software engineer.</span></div>
-            </h1>
-            
-            <div className="pt-5 mt-5 mb-5 pb-5">
-                <a className="btn btn-sm bg-dark text-light" onClick={scrollTo}>Discover</a>
+            <div>
+                <div className="mt-5">
+                    <img src="/gifgit.gif" alt="" />
+                </div>
+                <h1>
+                    <div className="headline mt-2 fs-1">Hi, I'm Zheng </div>
+                    <div><span className="headline2 fs-1">A</span> <span className="headline3">full stack</span> <span className="headline4">software engineer.</span></div>
+                </h1>
+                
+                <div className="pt-5 mt-5 mb-5 pb-5">
+                    <a className="btn btn-sm bg-dark text-light" onClick={scrollTo}>Discover</a>
+                </div>
             </div>
             {/* <div style={{height:'5rem', left:0, position:'absolute', backgroundColor:'transparent', width:'100%'}}>
                 <div></div>
             </div> */}
-            <div ref={myRef} className="row align-items-center">
+            <div ref={myRef} className="row align-items-center section1">
                 <div className="col-sm-6 mt-5">
                     <div className="fs-4 w-100 fst-italic fw-bold">I build fast responsive modern web applications.</div>
                     <div className="fs-6 mt-1 fw-lighter">The tools used on the projects are JAVA, Spring Boot, MySQL, React, JavaScript, BootStrap, HTML5, CSS, Python, TensorFlow, etc.</div>
                 </div>
                 <div className="col-sm-6 mt-5">
-                    <img src="/1.png" alt="2" className="w-75"/>
+                    <img src="/1.png" alt="2" className="w-75 opacity-75"/>
                 </div>
             </div>
 

@@ -4,7 +4,13 @@
   min-height: 100vh;
   font-size: calc(10px + 2vmin);
   color: white;
+
+  background-attachment: fixed;
+  background-image: url(../public/sig2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 .expand {
   min-height: 90vh;
 }
@@ -17,6 +23,14 @@
   background-repeat: no-repeat;
   background-position: bottom;
   -webkit-animation: fill 2s linear infinite;
+}
+
+.section1{
+  /* background-color: #282c34; */
+  background-image: url('/public/sig.jpeg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @keyframes fill {

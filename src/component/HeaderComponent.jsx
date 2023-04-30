@@ -11,7 +11,7 @@ export default function HeaderComponent() {
   const authContext = useAuth()
 
   return (
-    <Navbar collapseOnSelect expand="sm" bg="light" variant="dark" className="p-0 bg-transparent bg-gradient">
+    <Navbar collapseOnSelect expand="sm" bg="light" variant="dark" className="p-0 bg-transparent bg-gradient position-sticky top-0">
       <Container>
         <Navbar.Brand href="/" className="fw-bolder">ZEN</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

@@ -40,8 +40,19 @@ export default function MainPageComponent() {
                     <div><span className="headline2 fs-1">A</span> <span className="headline3">full stack</span> <span className="headline4">software engineer.</span></div>
                 </h1>
                 
-                <div className="pt-5 mt-5 mb-5 pb-5">
+                <div className="d-flex flex-column align-items-center">
                     <a className="btn btn-sm bg-dark text-light" onClick={scrollTo}>Discover</a>
+                    <div>
+                        <div class="mouse">
+                            <div class="wheel"></div>
+                        </div>
+                        <div>
+                            <span class="m_scroll_arrows unu"></span>
+                            <span class="m_scroll_arrows doi"></span>
+                            <span class="m_scroll_arrows trei"></span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             {/* <div style={{height:'5rem', left:0, position:'absolute', backgroundColor:'transparent', width:'100%'}}>

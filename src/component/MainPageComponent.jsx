@@ -17,11 +17,11 @@ export default function MainPageComponent() {
 
     const myRef = useRef(null)
     const scrollTo = () => {
-        window.scrollTo(0, (myRef.current.offsetTop + window.screenY))
+        window.scrollTo(0, (myRef.current.offsetTop))
     }
 
   return (
-    <div className="container-fluid g-0">
+    <div className="container-fluid">
       {
         loading
         ?
@@ -31,7 +31,7 @@ export default function MainPageComponent() {
         :
         authContext.lang === 'en' ?
         <>
-            <div>
+            <div className="vh-100">
                 <div className="mt-5">
                     <img src="/gifgit.gif" alt="" />
                 </div>
@@ -48,17 +48,21 @@ export default function MainPageComponent() {
                 <div></div>
             </div> */}
             
-            <div ref={myRef} className="row align-items-center section1 g-0">
-                <div className="col-sm-6 mt-5">
+            <div ref={myRef} className="row justify-content-end align-items-center section1 vh-100">
+                <div className="col-sm-5 mt-5">
                     <div className="fs-4 w-100 fst-italic fw-bold">I build fast responsive modern web applications.</div>
                     <div className="fs-6 mt-1 fw-lighter">The tools used on the projects are JAVA, Spring Boot, MySQL, React, JavaScript, BootStrap, HTML5, CSS, Python, TensorFlow, etc.</div>
                 </div>
-                <div className="col-sm-6 mt-5 mb-5">
+                {/* <div className="col-sm-6 mt-5 mb-5">
                     <img src="/1.png" alt="2" className="w-75 opacity-75"/>
-                </div>
+                </div> */}
             </div>
-
-            <div className="row align-items-center mt-5 pt-lg-5 section2 g-0">
+            {/* <div>
+                <div className="about">s</div>
+                <div>About me</div>
+            </div> */}
+            
+            <div className="row align-items-center section2 vh-100">
                 <div className="col-sm-7 mt-5">
                     <CarouselComponent />
                 </div>
@@ -71,47 +75,52 @@ export default function MainPageComponent() {
                     </div>
                 </div>
             </div>
-            <div className="row align-items-center mt-5 pt-lg-5">
-                <div className="text-center fs-4 fw-bolder border-1 border-bottom border-dark mb-2 fst-italic">Projects</div>
-            </div>
-            <div className="d-flex flex-wrap">
-                <div className="row m-5">
-                    <div className="col-sm-4 text-center flex-column d-flex align-items-center mb-5">
-                        <img src="/gitcard.gif" alt="placeholder" className="w-75"/>
-                        <p className="fs-5 mt-3">Github User Card</p>
-                        <span className="fs-6">Search github username and generate user infomation. Build with React.</span>
-                        <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/gitcard/index.html"}>View</button>
-                    </div>
-                    <div className="col-sm-4 text-center d-flex flex-column align-items-center mb-5">
-                        <img src="/pt.gif" alt="placeholder" className="w-75"/>
-                        <p className="fs-5 mt-3">Personal Trainer</p>
-                        <span className="fs-6">A fullstack web application build with Spring Boot 3, React 18, JWT authentication, BootStrap 5, and H2 in memeory database. Deployed through AWS S3 and Elastic Beanstalk.</span>
-                        <div>
-                        <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "http://pt-front.s3-website-us-east-1.amazonaws.com/"}>View</button>
-                        <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "http://pt-front.s3-website-us-east-1.amazonaws.com/"}>Repo</button>
+            <div className="section3 row">
+                <div className="row align-items-center">
+                    <div className="text-center fs-4 fw-bolder text-decoration-underline mb-1 fst-italic">Projects</div>
+                </div>
+                <div className="row align-items-center">
+                    <div className="text-center fs-5 fst-italic">Some personal projects</div> 
+                </div>
+                <div className="d-flex flex-wrap">
+                    <div className="row m-5">
+                        <div className="col-sm-4 text-center flex-column d-flex align-items-center mb-5">
+                            <img src="/gitcard.gif" alt="placeholder" className="w-75"/>
+                            <p className="fs-5 mt-3">Github User Card</p>
+                            <span className="fs-6">Search github username and generate user infomation. Build with React.</span>
+                            <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/gitcard/index.html"}>View</button>
+                        </div>
+                        <div className="col-sm-4 text-center d-flex flex-column align-items-center mb-5">
+                            <img src="/pt.gif" alt="placeholder" className="w-75"/>
+                            <p className="fs-5 mt-3">Personal Trainer</p>
+                            <span className="fs-6">A fullstack web application build with Spring Boot 3, React 18, JWT authentication, BootStrap 5, and H2 in memeory database. Deployed through AWS S3 and Elastic Beanstalk.</span>
+                            <div>
+                            <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "http://pt-front.s3-website-us-east-1.amazonaws.com/"}>View</button>
+                            <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "http://pt-front.s3-website-us-east-1.amazonaws.com/"}>Repo</button>
+                            </div>
+                        </div>
+                        <div className="col-sm-4 text-center d-flex flex-column align-items-center mb-5">
+                            <img src="/restaurant.gif" alt="placeholder" className="w-75 h-100"/>
+                            <p className="fs-5 mt-3">Restaurant</p>
+                            <span className="fs-6">Zen's restaurant. Build with HTML and CSS.</span>
+                            <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/restaurant/index.html"}>View</button>
+                        </div>
+                        <div className="col-sm-4 text-center d-flex flex-column align-items-center mb-5">
+                            <img src="/astro.gif" alt="placeholder" className="w-75 h-100"/>
+                            <p className="fs-5 mt-3">Astronomy of the Day</p>
+                            <span className="fs-6">Astronomy of the day, powered by NASA API. The website generates the Astronomy Picture of the Day. Build with Javascript</span>
+                            <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/astronomy/index.html"}>View</button>
+                        </div>
+                        <div className="col-sm-4 text-center d-flex flex-column align-items-center mb-5">
+                            <img src="/pic01.jpg" alt="placeholder" className="w-75"/>
+                            <p className="fs-5 mt-3">Sherlock's blog</p>
+                            <span className="fs-6">A simple blog site using flexbox.</span>
+                            <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/blog/index.html"}>View</button>
                         </div>
                     </div>
-                    <div className="col-sm-4 text-center d-flex flex-column align-items-center mb-5">
-                        <img src="/restaurant.gif" alt="placeholder" className="w-75 h-100"/>
-                        <p className="fs-5 mt-3">Restaurant</p>
-                        <span className="fs-6">Zen's restaurant. Build with HTML and CSS.</span>
-                        <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/restaurant/index.html"}>View</button>
-                    </div>
-                    <div className="col-sm-4 text-center d-flex flex-column align-items-center mb-5">
-                        <img src="/astro.gif" alt="placeholder" className="w-75 h-100"/>
-                        <p className="fs-5 mt-3">Astronomy of the Day</p>
-                        <span className="fs-6">Astronomy of the day, powered by NASA API. The website generates the Astronomy Picture of the Day. Build with Javascript</span>
-                        <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/astronomy/index.html"}>View</button>
-                    </div>
-                    <div className="col-sm-4 text-center d-flex flex-column align-items-center mb-5">
-                        <img src="/pic01.jpg" alt="placeholder" className="w-75"/>
-                        <p className="fs-5 mt-3">Sherlock's blog</p>
-                        <span className="fs-6">A simple blog site using flexbox.</span>
-                        <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/blog/index.html"}>View</button>
-                    </div>
                 </div>
+                <button className="btn btn-sm fw-bold bg-transparent d-flex justify-content-center" onClick={() => window.scrollTo({top:0})}>Top</button>
             </div>
-            <button className="btn btn-sm btn-dark fw-bold text-secondary" onClick={() => window.scrollTo({top:0})}>Top</button>
             </>
             :
             <MainPageComponentCn />

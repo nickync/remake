@@ -6,9 +6,10 @@
   color: white;
 
   background-attachment: fixed;
-  background-image: url(../public/sig2.jpeg);
+  background-image: url('/public/green1.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:cover;
+  background-position: center;
 }
 
 .expand {
@@ -19,30 +20,42 @@
   color:transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  background-image: url('/public/white.png');
+  background-image: url('/public/sky.jpeg');
   background-repeat: no-repeat;
   background-position: bottom;
   -webkit-animation: fill 2s linear infinite;
 }
 
 .section1{
-  /* background-color: #282c34; */
-  background-image: url('/public/sig.jpeg');
+  background-image: url('/public/mac.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 40rem;
 }
 
 .about {
-  filter: blur(10px);
-  -webkit-filter: blur(10px);
+  /* filter: blur(10px);
+  -webkit-filter: blur(10px); */
+  background-image: url('/public/mac1.jpg');
+  background-attachment: fixed;
+
 }
 
-.section2{
-  background-image: url('/public/sig.jpeg');
+.section2 {
+  background-image: url('/public/mac1.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 50rem;
+}
+
+.section3 {
+  background-image: url('/public/drop.png');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position:center; */
 }
 
 @keyframes fill {

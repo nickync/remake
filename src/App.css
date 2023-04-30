@@ -33,6 +33,18 @@
   background-size: cover;
 }
 
+.about {
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+}
+
+.section2{
+  background-image: url('/public/sig.jpeg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @keyframes fill {
   0%{
     background-size: 100% 0%;

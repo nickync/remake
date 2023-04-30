@@ -47,17 +47,18 @@ export default function MainPageComponent() {
             {/* <div style={{height:'5rem', left:0, position:'absolute', backgroundColor:'transparent', width:'100%'}}>
                 <div></div>
             </div> */}
-            <div ref={myRef} className="row align-items-center section1">
+            
+            <div ref={myRef} className="row align-items-center section1 g-0">
                 <div className="col-sm-6 mt-5">
                     <div className="fs-4 w-100 fst-italic fw-bold">I build fast responsive modern web applications.</div>
                     <div className="fs-6 mt-1 fw-lighter">The tools used on the projects are JAVA, Spring Boot, MySQL, React, JavaScript, BootStrap, HTML5, CSS, Python, TensorFlow, etc.</div>
                 </div>
-                <div className="col-sm-6 mt-5">
+                <div className="col-sm-6 mt-5 mb-5">
                     <img src="/1.png" alt="2" className="w-75 opacity-75"/>
                 </div>
             </div>
 
-            <div className="row align-items-center mt-5 pt-lg-5">
+            <div className="row align-items-center mt-5 pt-lg-5 section2 g-0">
                 <div className="col-sm-7 mt-5">
                     <CarouselComponent />
                 </div>

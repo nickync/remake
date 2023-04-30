@@ -4,6 +4,7 @@ import CarouselComponent from "./CarouselComponent";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "./AuthContext";
 import MainPageComponentCn from "./MainPageComponentCn";
+import Typewriter from "typewriter-effect";
 
 export default function MainPageComponent() {
     const [loading, setLoading] = useState(true)
@@ -12,12 +13,20 @@ export default function MainPageComponent() {
     useEffect(() => {
         setTimeout(() => {
             setLoading(false)
-        }, 1999)
+        },1700)
     },[])
 
-    const myRef = useRef(null)
-    const scrollTo = () => {
-        window.scrollTo(0, (myRef.current.offsetTop))
+    const section1 = useRef(null)
+    const section2 = useRef(null)
+    const section3 = useRef(null)
+    const scrollTo = (section) => {
+        if (section === section1){
+            window.scrollTo(0, (section1.current.offsetTop))
+        } else if (section === section2) {
+            window.scrollTo(0, (section2.current.offsetTop))
+        } else if (section === section3) {
+            window.scrollTo(0, (section3.current.offsetTop))
+        }
     }
 
   return (
@@ -31,49 +40,60 @@ export default function MainPageComponent() {
         :
         authContext.lang === 'en' ?
         <>
-            <div className="vh-100">
-                <div className="mt-5">
-                    <img src="/gifgit.gif" alt="" />
+            <div className="vh-100 d-flex flex-column justify-content-around">
+                <div>
+                    <div className="mt-5">
+                        <img id="logo" src="/java.png" alt="" style={{width:"5rem"}}/>
+                    </div>
+                    <h1>
+                        <div className="headline mt-2 fs-1">
+                            <Typewriter onInit={(typewriter) => {typewriter.typeString("Hi, I'm Zheng").pauseFor(3000).start()}} options={{loop:true, delay:75}} />
+                        </div>
+                        
+                        <div>
+                            <span className="headline2 fs-1">A</span> <span className="headline3">full stack</span> <span className="headline4">software engineer.</span>
+                        </div>
+                    </h1>
                 </div>
-                <h1>
-                    <div className="headline mt-2 fs-1">Hi, I'm Zheng </div>
-                    <div><span className="headline2 fs-1">A</span> <span className="headline3">full stack</span> <span className="headline4">software engineer.</span></div>
-                </h1>
-                
-                <div className="d-flex flex-column align-items-center">
-                    <a className="btn btn-sm bg-dark text-light" onClick={scrollTo}>Discover</a>
+                <div className="d-flex flex-column align-items-center justify-content-end">
                     <div>
-                        <div class="mouse">
-                            <div class="wheel"></div>
+                        <div className="mouse">
+                            <button className="btn btn-sm bg-transparent" onClick={() => scrollTo(section1)}><div className="wheel"></div></button>
                         </div>
                         <div>
-                            <span class="m_scroll_arrows unu"></span>
-                            <span class="m_scroll_arrows doi"></span>
-                            <span class="m_scroll_arrows trei"></span>
+                            <span className="m_scroll_arrows unu"></span>
+                            <span className="m_scroll_arrows doi"></span>
+                            <span className="m_scroll_arrows trei"></span>
                         </div>
                     </div>
-
                 </div>
             </div>
-            {/* <div style={{height:'5rem', left:0, position:'absolute', backgroundColor:'transparent', width:'100%'}}>
-                <div></div>
-            </div> */}
-            
-            <div ref={myRef} className="row justify-content-end align-items-center section1 vh-100">
-                <div className="col-sm-5 mt-5">
+            <div ref={section1} className="row section1 vh-100">
+                <div className="col-sm-7"></div>
+                <div className="col-sm-5 align-self-end">
                     <div className="fs-4 w-100 fst-italic fw-bold">I build fast responsive modern web applications.</div>
                     <div className="fs-6 mt-1 fw-lighter">The tools used on the projects are JAVA, Spring Boot, MySQL, React, JavaScript, BootStrap, HTML5, CSS, Python, TensorFlow, etc.</div>
                 </div>
                 {/* <div className="col-sm-6 mt-5 mb-5">
                     <img src="/1.png" alt="2" className="w-75 opacity-75"/>
                 </div> */}
+                <div className="d-flex flex-column justify-content-end">
+                    <div className="mouse mx-auto">
+                        <button className="btn btn-sm bg-transparent" onClick={() => scrollTo(section2)}><div className="wheel"></div></button>
+                    </div>
+                    <div>
+                        <span className="m_scroll_arrows unu mx-auto"></span>
+                        <span className="m_scroll_arrows doi mx-auto"></span>
+                        <span className="m_scroll_arrows trei mx-auto"></span>
+                    </div>
+                </div>
             </div>
             {/* <div>
                 <div className="about">s</div>
                 <div>About me</div>
             </div> */}
             
-            <div className="row align-items-center section2 vh-100">
+            <div ref={section2} className="row align-items-center section2 vh-100">
                 <div className="col-sm-7 mt-5">
                     <CarouselComponent />
                 </div>
@@ -85,8 +105,18 @@ export default function MainPageComponent() {
                         I was a senior banker in <i>JPMorgan Chase</i> prior to becoming a software engineer. During my years of banker life, I managed to be one of the top-performing bankers nationwide and received numerous recognitions and awards. Now I had become a software engineer and work with a global tech team on the trading floor!
                     </div>
                 </div>
+                <div className="d-flex flex-column justify-content-end">
+                    <div className="mouse mx-auto">
+                        <button className="btn btn-sm bg-transparent" onClick={() => scrollTo(section3)}><div className="wheel"></div></button>
+                    </div>
+                    <div>
+                        <span className="m_scroll_arrows unu mx-auto"></span>
+                        <span className="m_scroll_arrows doi mx-auto"></span>
+                        <span className="m_scroll_arrows trei mx-auto"></span>
+                    </div>
+                </div>
             </div>
-            <div className="section3 row">
+            <div ref={section3} className="section3 row">
                 <div className="row align-items-center">
                     <div className="text-center fs-4 fw-bolder text-decoration-underline mb-1 fst-italic">Projects</div>
                 </div>
@@ -130,7 +160,11 @@ export default function MainPageComponent() {
                         </div>
                     </div>
                 </div>
-                <button className="btn btn-sm fw-bold bg-transparent d-flex justify-content-center" onClick={() => window.scrollTo({top:0})}>Top</button>
+                <button id="bottom" onClick={() => window.scrollTo({top:0})} className="btn">
+                    <span className="m_scroll_arrows unu mx-auto"></span>
+                    <span className="m_scroll_arrows doi mx-auto"></span>
+                    <span className="m_scroll_arrows trei mx-auto"></span>
+                </button>
             </div>
             </>
             :

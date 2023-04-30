@@ -13,6 +13,24 @@
   transform:rotate3d(1,2,1);
 }
 
+#logo {
+  animation: rotateLogo 3s linear infinite;
+}
+
+@keyframes rotateLogo {
+  0% {
+    transform: rotateY(0deg);
+  }
+
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+#bottom {
+  transform: rotateX(180deg);
+}
+
 .expand {
   min-height: 90vh;
 }
@@ -357,4 +375,10 @@
   50% { background-position: 50% 100%; }
   75% { background-position: 100% 50%;}
   100% { background-position: 0% 50%; }
+}
+
+@media only screen and (max-device-width: 1660px) {
+  .section1, .section2, .section3 {
+    background-attachment: fixed;
+  }
 }

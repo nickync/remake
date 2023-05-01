@@ -46,10 +46,10 @@ export default function MainPageComponentCn() {
                     <div><span className="headline2 fs-1">全栈</span> <span className="headline4">程序猿🦍。</span></div>
                 </h1>
             </div>
-            <div className="d-flex flex-column align-items-center justify-content-end">
+            <div className="d-flex flex-column align-items-center justify-content-end" onClick={() => scrollTo(section1)}>
                 <div>
                     <div className="mouse">
-                        <button className="btn btn-sm bg-transparent" onClick={() => scrollTo(section1)}><div className="wheel"></div></button>
+                        <button className="btn btn-sm bg-transparent" ><div className="wheel"></div></button>
                     </div>
                     <div>
                         <span className="m_scroll_arrows unu"></span>
@@ -66,9 +66,9 @@ export default function MainPageComponentCn() {
                     <div className="fs-4 w-100 fst-italic fw-bold">我致力于构建开发快速响应式网站。</div>
                     <div className="fs-6 mt-1 fw-lighter">我应用到的技术栈有 JAVA，Spring Boot，MySQL，React，JavaScript，BootStrap，HTML5，CSS，Python，TensorFlow 等等。</div>
                 </div>
-                <div className="d-flex flex-column justify-content-end">
+                <div className="d-flex flex-column justify-content-end" onClick={() => scrollTo(section2)}>
                     <div className="mouse mx-auto">
-                        <button className="btn btn-sm bg-transparent" onClick={() => scrollTo(section2)}><div className="wheel"></div></button>
+                        <button className="btn btn-sm bg-transparent"><div className="wheel"></div></button>
                     </div>
                     <div>
                         <span className="m_scroll_arrows unu mx-auto"></span>
@@ -90,9 +90,9 @@ export default function MainPageComponentCn() {
                         在成为软件工程师之前，我曾经是<i>摩根大通银行</i>的资深客户经理。在我多年的客户经理生涯中，我有幸成为全美最杰出的客户经理之一，并多次获得各种奖项与荣誉。而现在，我作为一名软件开发者加入了全球外汇期权交易开发者团队！
                     </div>
                 </div>
-                <div className="d-flex flex-column justify-content-end">
+                <div className="d-flex flex-column justify-content-end" onClick={() => scrollTo(section3)}>
                     <div className="mouse mx-auto">
-                        <button className="btn btn-sm bg-transparent" onClick={() => scrollTo(section3)}><div className="wheel"></div></button>
+                        <button className="btn btn-sm bg-transparent"><div className="wheel"></div></button>
                     </div>
                     <div>
                         <span className="m_scroll_arrows unu mx-auto"></span>
@@ -105,7 +105,6 @@ export default function MainPageComponentCn() {
                 <div className="row align-items-center">
                     <div className="text-center fs-4 fw-bolder text-decoration-underline mb-1 fst-italic">项目</div>
                 </div>
-            
                 <div className="d-flex flex-wrap">
                     <div className="row m-5">
                         <div className="col-sm-4 text-center flex-column d-flex align-items-center mb-5">

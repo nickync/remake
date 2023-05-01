@@ -55,10 +55,10 @@ export default function MainPageComponent() {
                         </div>
                     </h1>
                 </div>
-                <div className="d-flex flex-column align-items-center justify-content-end">
+                <div className="d-flex flex-column align-items-center justify-content-end" onClick={() => scrollTo(section1)}>
                     <div>
                         <div className="mouse">
-                            <button className="btn btn-sm bg-transparent" onClick={() => scrollTo(section1)}><div className="wheel"></div></button>
+                            <button className="btn btn-sm bg-transparent"><div className="wheel"></div></button>
                         </div>
                         <div>
                             <span className="m_scroll_arrows unu"></span>
@@ -77,9 +77,9 @@ export default function MainPageComponent() {
                 {/* <div className="col-sm-6 mt-5 mb-5">
                     <img src="/1.png" alt="2" className="w-75 opacity-75"/>
                 </div> */}
-                <div className="d-flex flex-column justify-content-end">
+                <div className="d-flex flex-column justify-content-end" onClick={() => scrollTo(section2)}>
                     <div className="mouse mx-auto">
-                        <button className="btn btn-sm bg-transparent" onClick={() => scrollTo(section2)}><div className="wheel"></div></button>
+                        <button className="btn btn-sm bg-transparent"><div className="wheel"></div></button>
                     </div>
                     <div>
                         <span className="m_scroll_arrows unu mx-auto"></span>
@@ -105,9 +105,9 @@ export default function MainPageComponent() {
                         I was a senior banker in <i>JPMorgan Chase</i> prior to becoming a software engineer. During my years of banker life, I managed to be one of the top-performing bankers nationwide and received numerous recognitions and awards. Now I had become a software engineer and work with a global tech team on the trading floor!
                     </div>
                 </div>
-                <div className="d-flex flex-column justify-content-end">
+                <div className="d-flex flex-column justify-content-end" onClick={() => scrollTo(section3)}>
                     <div className="mouse mx-auto">
-                        <button className="btn btn-sm bg-transparent" onClick={() => scrollTo(section3)}><div className="wheel"></div></button>
+                        <button className="btn btn-sm bg-transparent"><div className="wheel"></div></button>
                     </div>
                     <div>
                         <span className="m_scroll_arrows unu mx-auto"></span>

@@ -377,7 +377,7 @@
   100% { background-position: 0% 50%; }
 }
 
-@media only screen and (max-device-width: 1660px) {
+@media only screen and (max-device-width: 840px) {
   .App, .section1, .section2, .section3 {
     background-attachment: scroll;
   }

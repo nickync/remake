@@ -379,6 +379,6 @@
 
 @media only screen and (max-device-width: 1660px) {
   .section1, .section2, .section3 {
-    background-attachment: fixed;
+    background-attachment: scroll;
   }
 }

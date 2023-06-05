@@ -107,38 +107,47 @@ export default function MainPageComponentCn() {
                 </div>
                 <div className="d-flex flex-wrap">
                     <div className="row m-5">
+                    <div className="col-sm-4 text-center flex-column d-flex align-items-center mb-5">
+                            <img src="/fx.gif" alt="placeholder" className="w-75"/>
+                            <p className="fs-5 mt-3">外汇平台</p>
+                            <span className="fs-6">本项目提供200多种外汇汇率，并包含任意外汇转换功能以及汇率历史图表。 技术栈：网页版 - React, Bootstrap, axios; Java App：JavaFX</span>
+                            <div>
+                                <button className="btn btn-sm btn-dark rounded-4 me-1" onClick={() => window.open("https://fx-currency.onrender.com", '_blank')}>展示</button>
+                                <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.open("https://github.com/nickync/fx-currency-rate", '_blank')}>Repo</button>
+                            </div>
+                        </div>
                         <div className="col-sm-4 text-center flex-column d-flex align-items-center mb-5">
                             <img src="/gitcard.gif" alt="placeholder" className="w-75"/>
                             <p className="fs-5 mt-3">Github </p>
                             <span className="fs-6">搜索Github用户并显示其资料。技术栈：React</span>
-                            <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/gitcard/index.html"}>展示</button>
+                            <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.open("/gitcard/index.html", '_blank')}>展示</button>
                         </div>
                         <div className="col-sm-4 text-center d-flex flex-column align-items-center mb-5">
                             <img src="/pt.gif" alt="placeholder" className="w-75"/>
                             <p className="fs-5 mt-3">健身培训师</p>
                             <span className="fs-6">全栈健身培训师网站，培训师与客户可以注册登录并建立培训计划等等。技术栈：Spring Boot 3，React 18，JWT authentication，BootStrap，H2 in memeory database，AWS S3 and Elastic Beanstalk。</span>
                             <div>
-                            <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "http://pt-front.s3-website-us-east-1.amazonaws.com/"}>展示</button>
-                            <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "http://pt-front.s3-website-us-east-1.amazonaws.com/"}>Repo</button>
+                            <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.open("http://pt-front.s3-website-us-east-1.amazonaws.com/", '_blank')}>展示</button>
+                            <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.open("http://pt-front.s3-website-us-east-1.amazonaws.com/", '_blank')}>Repo</button>
                             </div>
                         </div>
                         <div className="col-sm-4 text-center d-flex flex-column align-items-center mb-5">
                             <img src="/restaurant.gif" alt="placeholder" className="w-75 h-100"/>
                             <p className="fs-5 mt-3">餐馆</p>
                             <span className="fs-6">简易餐馆网站. 技术栈：HTML，CSS.</span>
-                            <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/restaurant/index.html"}>展示</button>
+                            <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.open("/restaurant/index.html", '_blank')}>展示</button>
                         </div>
                         <div className="col-sm-4 text-center d-flex flex-column align-items-center mb-5">
                             <img src="/astro.gif" alt="placeholder" className="w-75 h-100"/>
                             <p className="fs-5 mt-3">星空</p>
                             <span className="fs-6">通过NASA API抓取太空每日一图。技术栈：Javascript</span>
-                            <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/astronomy/index.html"}>展示</button>
+                            <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.open("/astronomy/index.html", '_blank')}>展示</button>
                         </div>
                         <div className="col-sm-4 text-center d-flex flex-column align-items-center mb-5">
                             <img src="/pic01.jpg" alt="placeholder" className="w-75"/>
                             <p className="fs-5 mt-3">福尔摩斯</p>
                             <span className="fs-6">福尔摩斯资料。</span>
-                            <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/blog/index.html"}>展示</button>
+                            <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.open("/blog/index.html", '_blank')}>展示</button>
                         </div>
                     </div>
                 </div>

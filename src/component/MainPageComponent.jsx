@@ -126,37 +126,46 @@ export default function MainPageComponent() {
                 <div className="d-flex flex-wrap">
                     <div className="row m-5">
                         <div className="col-sm-4 text-center flex-column d-flex align-items-center mb-5">
+                            <img src="/fx.gif" alt="placeholder" className="w-75"/>
+                            <p className="fs-5 mt-3">FX Currency</p>
+                            <span className="fs-6">This is project provides foreign exchange currency rate for over 200 currencies, and inclues conversion component and historical chart component. Build with React, JavaFX.</span>
+                            <div>
+                                <button className="btn btn-sm btn-dark rounded-4 me-1" onClick={() => window.open("https://fx-currency.onrender.com", '_blank')}>View</button>
+                                <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.open("https://github.com/nickync/fx-currency-rate", '_blank')}>Repo</button>
+                            </div>
+                        </div>
+                        <div className="col-sm-4 text-center flex-column d-flex align-items-center mb-5">
                             <img src="/gitcard.gif" alt="placeholder" className="w-75"/>
                             <p className="fs-5 mt-3">Github User Card</p>
                             <span className="fs-6">Search github username and generate user infomation. Build with React.</span>
-                            <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/gitcard/index.html"}>View</button>
+                            <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.open("/gitcard/index.html", '_blank')}>View</button>
                         </div>
                         <div className="col-sm-4 text-center d-flex flex-column align-items-center mb-5">
                             <img src="/pt.gif" alt="placeholder" className="w-75"/>
                             <p className="fs-5 mt-3">Personal Trainer</p>
                             <span className="fs-6">A fullstack web application build with Spring Boot 3, React 18, JWT authentication, BootStrap 5, and H2 in memeory database. Deployed through AWS S3 and Elastic Beanstalk.</span>
                             <div>
-                            <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "http://pt-front.s3-website-us-east-1.amazonaws.com/"}>View</button>
-                            <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "http://pt-front.s3-website-us-east-1.amazonaws.com/"}>Repo</button>
+                                <button className="btn btn-sm btn-dark rounded-4 me-1" onClick={() => window.open("http://pt-front.s3-website-us-east-1.amazonaws.com/", '_blank')}>View</button>
+                                <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.open("https://github.com/nickync/personal-trainer", '_blank')}>Repo</button>
                             </div>
                         </div>
                         <div className="col-sm-4 text-center d-flex flex-column align-items-center mb-5">
                             <img src="/restaurant.gif" alt="placeholder" className="w-75 h-100"/>
                             <p className="fs-5 mt-3">Restaurant</p>
                             <span className="fs-6">Zen's restaurant. Build with HTML and CSS.</span>
-                            <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/restaurant/index.html"}>View</button>
+                            <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.open("/restaurant/index.html", '_blank')}>View</button>
                         </div>
                         <div className="col-sm-4 text-center d-flex flex-column align-items-center mb-5">
                             <img src="/astro.gif" alt="placeholder" className="w-75 h-100"/>
                             <p className="fs-5 mt-3">Astronomy of the Day</p>
                             <span className="fs-6">Astronomy of the day, powered by NASA API. The website generates the Astronomy Picture of the Day. Build with Javascript</span>
-                            <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/astronomy/index.html"}>View</button>
+                            <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.open("/astronomy/index.html", '_blank')}>View</button>
                         </div>
                         <div className="col-sm-4 text-center d-flex flex-column align-items-center mb-5">
                             <img src="/pic01.jpg" alt="placeholder" className="w-75"/>
                             <p className="fs-5 mt-3">Sherlock's blog</p>
                             <span className="fs-6">A simple blog site using flexbox.</span>
-                            <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.location.href = "/blog/index.html"}>View</button>
+                            <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.open("/blog/index.html", '_blank')}>View</button>
                         </div>
                     </div>
                 </div>

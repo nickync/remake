@@ -49,7 +49,6 @@ export default function MainPageComponent() {
                         <div className="headline mt-2 fs-1">
                             <Typewriter onInit={(typewriter) => {typewriter.typeString("Hi, I'm Zheng").pauseFor(3000).start()}} options={{loop:true, delay:75}} />
                         </div>
-                        
                         <div>
                             <span className="headline2 fs-1">A</span> <span className="headline3">full stack</span> <span className="headline4">software engineer.</span>
                         </div>

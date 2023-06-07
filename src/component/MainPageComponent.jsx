@@ -40,7 +40,7 @@ export default function MainPageComponent() {
         :
         authContext.lang === 'en' ?
         <>
-            <div className="vh-100 d-flex flex-column justify-content-around">
+            <div className="vh-100 d-flex flex-column justify-content-center">
                 <div>
                     <div className="mt-5">
                         <img id="logo" src="/java.png" alt="" style={{width:"5rem"}}/>
@@ -54,7 +54,7 @@ export default function MainPageComponent() {
                         </div>
                     </h1>
                 </div>
-                <div className="d-flex flex-column align-items-center justify-content-end" onClick={() => scrollTo(section1)}>
+                <div className="d-flex flex-column align-items-center justify-content-lg-start p-5" onClick={() => scrollTo(section1)}>
                     <div>
                         <div className="mouse">
                             <button className="btn btn-sm bg-transparent"><div className="wheel"></div></button>

@@ -71,7 +71,7 @@ export default function MainPageComponent() {
                 <div className="col-sm-7"></div>
                 <div className="col-sm-5 align-self-end">
                     <div className="fs-4 w-100 fst-italic fw-bold">I build fast responsive modern web applications.</div>
-                    <div className="fs-6 mt-1 fw-lighter">The tools used on the projects are JAVA, Spring Boot, MySQL, React, JavaScript, BootStrap, HTML5, CSS, Python, TensorFlow, etc.</div>
+                    <div className="fs-6 mt-1 fw-light text-start mt-5 text-white">The tools used on the projects are JAVA, Spring Boot, MySQL, React, JavaScript, BootStrap, HTML5, CSS, Python, TensorFlow, etc.</div>
                 </div>
                 {/* <div className="col-sm-6 mt-5 mb-5">
                     <img src="/1.png" alt="2" className="w-75 opacity-75"/>
@@ -97,8 +97,8 @@ export default function MainPageComponent() {
                     <CarouselComponent />
                 </div>
                 <div className="col-sm-5 mt-5">
-                    <div className="fs-4 fst-italic fw-bold text-center mb-3">About me</div>
-                    <div className="fs-6 fw-lighter text-start mt-5">
+                    <div className="fs-4 fst-italic fw-bolder text-center mb-3">About me</div>
+                    <div className="fs-6 fw-light text-start mt-5 text-white">
                         Hi, there.
                         <br></br>
                         I was a senior banker in <i>JPMorgan Chase</i> prior to becoming a software engineer. During my years of banker life, I managed to be one of the top-performing bankers nationwide and received numerous recognitions and awards. Now I had become a software engineer and work with a global tech team on the trading floor!

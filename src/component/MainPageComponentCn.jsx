@@ -64,7 +64,7 @@ export default function MainPageComponentCn() {
                 <div className="col-sm-7"></div>
                 <div className="col-sm-5 align-self-end">
                     <div className="fs-4 w-100 fst-italic fw-bold">我致力于构建开发快速响应式网站。</div>
-                    <div className="fs-6 mt-1 fw-lighter">我应用到的技术栈有 JAVA，Spring Boot，MySQL，React，JavaScript，BootStrap，HTML5，CSS，Python，TensorFlow 等等。</div>
+                    <div className="fs-6 mt-1 fw-light text-start mt-5 text-white">我应用到的技术栈有 JAVA，Spring Boot，MySQL，React，JavaScript，BootStrap，HTML5，CSS，Python，TensorFlow 等等。</div>
                 </div>
                 <div className="d-flex flex-column justify-content-end" onClick={() => scrollTo(section2)}>
                     <div className="mouse mx-auto">
@@ -84,7 +84,7 @@ export default function MainPageComponentCn() {
                 </div>
                 <div className="col-sm-5 mt-5">
                     <div className="fs-4 fst-italic fw-bold text-center mb-3">关于我</div>
-                    <div className="fs-6 fw-lighter text-start mt-5">
+                    <div className="fs-6 text-start mt-5 fw-light text-start mt-5 text-white">
                         你好，
                         <br></br>
                         在成为软件工程师之前，我曾经是<i>摩根大通银行</i>的资深客户经理。在我多年的客户经理生涯中，我有幸成为全美最杰出的客户经理之一，并多次获得各种奖项与荣誉。而现在，我作为一名软件开发者加入了全球外汇期权交易开发者团队！
@@ -127,7 +127,7 @@ export default function MainPageComponentCn() {
                             <p className="fs-5 mt-3">健身培训师</p>
                             <span className="fs-6">全栈健身培训师网站，培训师与客户可以注册登录并建立培训计划等等。技术栈：Spring Boot 3，React 18，JWT authentication，BootStrap，H2 in memeory database，AWS S3 and Elastic Beanstalk。</span>
                             <div>
-                            <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.open("http://pt-front.s3-website-us-east-1.amazonaws.com/", '_blank')}>展示</button>
+                            <button className="btn btn-sm btn-dark rounded-4 me-1" onClick={() => window.open("http://pt-front.s3-website-us-east-1.amazonaws.com/", '_blank')}>展示</button>
                             <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.open("http://pt-front.s3-website-us-east-1.amazonaws.com/", '_blank')}>Repo</button>
                             </div>
                         </div>

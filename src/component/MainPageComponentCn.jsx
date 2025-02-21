@@ -63,8 +63,8 @@ export default function MainPageComponentCn() {
             <div ref={section1} className="row section1 vh-100">
                 <div className="col-sm-7"></div>
                 <div className="col-sm-5 align-self-end">
-                    <div className="fs-4 w-100 fst-italic fw-bold">我致力于构建开发快速响应式网站。</div>
-                    <div className="fs-6 mt-1 fw-light text-start mt-5 text-white">我应用到的技术栈有 JAVA，Spring Boot，MySQL，React，JavaScript，BootStrap，HTML5，CSS，Python，TensorFlow 等等。</div>
+                    <div className="fs-4 w-100 fst-italic fw-bold">我。。。。。</div>
+                    <div className="fs-6 mt-1 fw-light text-start mt-5 text-white">等等。。。。</div>
                 </div>
                 <div className="d-flex flex-column justify-content-end" onClick={() => scrollTo(section2)}>
                     <div className="mouse mx-auto">

@@ -63,8 +63,8 @@ export default function MainPageComponentCn() {
             <div ref={section1} className="row section1 vh-100">
                 <div className="col-sm-7"></div>
                 <div className="col-sm-5 align-self-end">
-                    <div className="fs-4 w-100 fst-italic fw-bold">我。。。。。</div>
-                    <div className="fs-6 mt-1 fw-light text-start mt-5 text-white">等等。。。。</div>
+                    <div className="fs-4 w-100 fst-italic fw-bold">我是。。。。。</div>
+                    <div className="fs-6 mt-1 fw-light text-start mt-5 text-white">显示器质检员</div>
                 </div>
                 <div className="d-flex flex-column justify-content-end" onClick={() => scrollTo(section2)}>
                     <div className="mouse mx-auto">
@@ -83,7 +83,7 @@ export default function MainPageComponentCn() {
                     <CarouselComponent />
                 </div>
                 <div className="col-sm-5 mt-5">
-                    <div className="fs-4 fst-italic fw-bold text-center mb-3">与我无关</div>
+                    <div className="fs-4 fst-italic fw-bold text-center mb-3">我</div>
                     <div className="fs-6 text-start mt-5 fw-light text-start mt-5 text-white">
                         你 好，
                         <br></br>

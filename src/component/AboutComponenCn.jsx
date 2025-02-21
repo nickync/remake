@@ -9,7 +9,7 @@ export default function AboutComponentCn() {
             有任何建议？
         </div>
         <div className="fs-4">
-            请联系我。
+            不接受建议。
         </div>
         <div>
             <a className="text-light" href="mailto:nicknyc9024@gmail.com"><FontAwesomeIcon icon={faEnvelope} /></a>

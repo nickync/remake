@@ -101,7 +101,7 @@ export default function MainPageComponent() {
                     <div className="fs-6 fw-light text-start mt-5 text-white">
                         Hi, there.
                         <br></br>
-                        I was a senior banker in <i>JPMorgan Chase</i> prior to becoming a software engineer. During my years of banker life, I managed to be one of the top-performing bankers nationwide and received numerous recognitions and awards. Now I had become a software engineer and work with a global tech team on the trading floor!
+                        I was a senior banker in <i>JPMorgan Chase</i> prior to becoming a software engineer. During my years of banker life, I managed to be one of the top-performing bankers nationwide and received numerous recognitions and awards. Now I work on the trading floor constantly trying to figure out why some codes don't work AND why they WORK.
                     </div>
                 </div>
                 <div className="d-flex flex-column justify-content-end" onClick={() => scrollTo(section3)}>

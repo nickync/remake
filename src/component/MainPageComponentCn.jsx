@@ -83,11 +83,11 @@ export default function MainPageComponentCn() {
                     <CarouselComponent />
                 </div>
                 <div className="col-sm-5 mt-5">
-                    <div className="fs-4 fst-italic fw-bold text-center mb-3">关于我</div>
+                    <div className="fs-4 fst-italic fw-bold text-center mb-3">与我无关</div>
                     <div className="fs-6 text-start mt-5 fw-light text-start mt-5 text-white">
-                        你好，
+                        你 好，
                         <br></br>
-                        在成为软件工程师之前，我曾经是<i>摩根大通银行</i>的资深客户经理。在我多年的客户经理生涯中，我有幸成为全美最杰出的客户经理之一，并多次获得各种奖项与荣誉。而现在，我作为一名软件开发者加入了全球外汇期权交易开发者团队！
+                        学的Finance， 做的Sales，转的码农，Athena是什么鬼
                     </div>
                 </div>
                 <div className="d-flex flex-column justify-content-end" onClick={() => scrollTo(section3)}>

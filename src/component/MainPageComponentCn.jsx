@@ -87,7 +87,7 @@ export default function MainPageComponentCn() {
                     <div className="fs-6 text-start mt-5 fw-light text-start mt-5 text-white">
                         你 好，
                         <br></br>
-                        学的Finance， 做的Sales，转的码农，Athena是什么鬼
+                        Hi there, 
                     </div>
                 </div>
                 <div className="d-flex flex-column justify-content-end" onClick={() => scrollTo(section3)}>

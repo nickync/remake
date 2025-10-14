@@ -133,12 +133,6 @@ export default function MainPageComponent() {
                                 <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.open("https://github.com/nickync/fx-currency-rate", '_blank')}>Repo</button>
                             </div>
                         </div>
-                        <div className="col-sm-4 text-center flex-column d-flex align-items-center mb-5">
-                            <img src="/gitcard.gif" alt="placeholder" className="w-75"/>
-                            <p className="fs-5 mt-3">Github User Card</p>
-                            <span className="fs-6">Search github username and generate user infomation. Build with React.</span>
-                            <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.open("/gitcard/index.html", '_blank')}>View</button>
-                        </div>
                         <div className="col-sm-4 text-center d-flex flex-column align-items-center mb-5">
                             <img src="/pt.gif" alt="placeholder" className="w-75"/>
                             <p className="fs-5 mt-3">Personal Trainer</p>
@@ -147,6 +141,21 @@ export default function MainPageComponent() {
                                 <button className="btn btn-sm btn-dark rounded-4 me-1" onClick={() => window.open("http://pt-front.s3-website-us-east-1.amazonaws.com/", '_blank')}>View</button>
                                 <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.open("https://github.com/nickync/personal-trainer", '_blank')}>Repo</button>
                             </div>
+                        </div>
+                        <div className="col-sm-4 text-center d-flex flex-column align-items-center mb-5">
+                            <img src="/digit.gif" alt="placeholder" className="w-75"/>
+                            <p className="fs-5 mt-3">Handwritten digit recognition</p>
+                            <span className="fs-6">This is a handwritten digit recognition project, NN model trained with MNIST data. Build with TensorFlow, Spring AI，React，BootStrap </span>
+                            <div>
+                            <button className="btn btn-sm btn-dark rounded-4 me-1" onClick={() => window.open("https://github.com/nickync/digit-recognition", '_blank')}>Frontend</button>
+                            <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.open("https://github.com/nickync/digit-recognition-backend", '_blank')}>Backend</button>
+                            </div>
+                        </div>
+                        <div className="col-sm-4 text-center flex-column d-flex align-items-center mb-5">
+                            <img src="/gitcard.gif" alt="placeholder" className="w-75"/>
+                            <p className="fs-5 mt-3">Github User Card</p>
+                            <span className="fs-6">Search github username and generate user infomation. Build with React.</span>
+                            <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.open("/gitcard/index.html", '_blank')}>View</button>
                         </div>
                         <div className="col-sm-4 text-center d-flex flex-column align-items-center mb-5">
                             <img src="/restaurant.gif" alt="placeholder" className="w-75 h-100"/>

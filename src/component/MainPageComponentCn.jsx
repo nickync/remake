@@ -116,12 +116,6 @@ export default function MainPageComponentCn() {
                                 <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.open("https://github.com/nickync/fx-currency-rate", '_blank')}>Repo</button>
                             </div>
                         </div>
-                        <div className="col-sm-4 text-center flex-column d-flex align-items-center mb-5">
-                            <img src="/gitcard.gif" alt="placeholder" className="w-75"/>
-                            <p className="fs-5 mt-3">Github </p>
-                            <span className="fs-6">搜索Github用户并显示其资料。技术栈：React</span>
-                            <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.open("/gitcard/index.html", '_blank')}>展示</button>
-                        </div>
                         <div className="col-sm-4 text-center d-flex flex-column align-items-center mb-5">
                             <img src="/pt.gif" alt="placeholder" className="w-75"/>
                             <p className="fs-5 mt-3">健身培训师</p>
@@ -130,6 +124,23 @@ export default function MainPageComponentCn() {
                             <button className="btn btn-sm btn-dark rounded-4 me-1" onClick={() => window.open("http://pt-front.s3-website-us-east-1.amazonaws.com/", '_blank')}>展示</button>
                             <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.open("http://pt-front.s3-website-us-east-1.amazonaws.com/", '_blank')}>Repo</button>
                             </div>
+                        </div>
+
+                        <div className="col-sm-4 text-center d-flex flex-column align-items-center mb-5">
+                            <img src="/digit.gif" alt="placeholder" className="w-75"/>
+                            <p className="fs-5 mt-3">手写数字识别</p>
+                            <span className="fs-6">这是一个简单的手写数字识别应用，使用MNIST数据库训练的神经网络模型来识别用户在画布上绘制的数字（0-9）。 前端使用React进行部署，后端API使用Java SpringBoot载入此前训练的模型。技术栈：TensorFlow, Spring AI，React，BootStrap </span>
+                            <div>
+                            <button className="btn btn-sm btn-dark rounded-4 me-1" onClick={() => window.open("https://github.com/nickync/digit-recognition", '_blank')}>Frontend</button>
+                            <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.open("https://github.com/nickync/digit-recognition-backend", '_blank')}>Backend</button>
+                            </div>
+                        </div>
+
+                        <div className="col-sm-4 text-center flex-column d-flex align-items-center mb-5">
+                            <img src="/gitcard.gif" alt="placeholder" className="w-75"/>
+                            <p className="fs-5 mt-3">Github </p>
+                            <span className="fs-6">搜索Github用户并显示其资料。技术栈：React</span>
+                            <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.open("/gitcard/index.html", '_blank')}>展示</button>
                         </div>
                         <div className="col-sm-4 text-center d-flex flex-column align-items-center mb-5">
                             <img src="/restaurant.gif" alt="placeholder" className="w-75 h-100"/>

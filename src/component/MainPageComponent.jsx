@@ -151,6 +151,14 @@ export default function MainPageComponent() {
                             <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.open("https://github.com/nickync/digit-recognition-backend", '_blank')}>Backend</button>
                             </div>
                         </div>
+                        <div className="col-sm-4 text-center d-flex flex-column align-items-center mb-5">
+                            <img src="/chatbot.gif" alt="placeholder" className="w-75"/>
+                            <p className="fs-5 mt-3">LLM Chatbot</p>
+                            <span className="fs-6">A chatbot built with React, API calls Ollama's model: llama33.1:70b. Tech stacks：Ollama, React, Tailwind CSS </span>
+                            <div>
+                                <button className="btn btn-sm btn-dark rounded-4 me-1" onClick={() => window.open("https://github.com/nickync/chatbot/tree/main/chatbot-frontend", '_blank')}>Frontend</button>
+                            </div>
+                        </div>
                         <div className="col-sm-4 text-center flex-column d-flex align-items-center mb-5">
                             <img src="/gitcard.gif" alt="placeholder" className="w-75"/>
                             <p className="fs-5 mt-3">Github User Card</p>

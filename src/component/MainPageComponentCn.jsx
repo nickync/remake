@@ -121,8 +121,8 @@ export default function MainPageComponentCn() {
                             <p className="fs-5 mt-3">健身培训师</p>
                             <span className="fs-6">全栈健身培训师网站，培训师与客户可以注册登录并建立培训计划等等。技术栈：Spring Boot 3，React 18，JWT authentication，BootStrap，H2 in memeory database，AWS S3 and Elastic Beanstalk。</span>
                             <div>
-                            <button className="btn btn-sm btn-dark rounded-4 me-1" onClick={() => window.open("http://pt-front.s3-website-us-east-1.amazonaws.com/", '_blank')}>展示</button>
-                            <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.open("http://pt-front.s3-website-us-east-1.amazonaws.com/", '_blank')}>Repo</button>
+                                <button className="btn btn-sm btn-dark rounded-4 me-1" onClick={() => window.open("http://pt-front.s3-website-us-east-1.amazonaws.com/", '_blank')}>展示</button>
+                                <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.open("http://pt-front.s3-website-us-east-1.amazonaws.com/", '_blank')}>Repo</button>
                             </div>
                         </div>
 
@@ -131,8 +131,17 @@ export default function MainPageComponentCn() {
                             <p className="fs-5 mt-3">手写数字识别</p>
                             <span className="fs-6">这是一个简单的手写数字识别应用，使用MNIST数据库训练的神经网络模型来识别用户在画布上绘制的数字（0-9）。 前端使用React进行部署，后端API使用Java SpringBoot载入此前训练的模型。技术栈：TensorFlow, Spring AI，React，BootStrap </span>
                             <div>
-                            <button className="btn btn-sm btn-dark rounded-4 me-1" onClick={() => window.open("https://github.com/nickync/digit-recognition", '_blank')}>Frontend</button>
-                            <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.open("https://github.com/nickync/digit-recognition-backend", '_blank')}>Backend</button>
+                                <button className="btn btn-sm btn-dark rounded-4 me-1" onClick={() => window.open("https://github.com/nickync/digit-recognition", '_blank')}>Frontend</button>
+                                <button className="btn btn-sm btn-dark rounded-4" onClick={() => window.open("https://github.com/nickync/digit-recognition-backend", '_blank')}>Backend</button>
+                            </div>
+                        </div>
+
+                        <div className="col-sm-4 text-center d-flex flex-column align-items-center mb-5">
+                            <img src="/chatbot.gif" alt="placeholder" className="w-75"/>
+                            <p className="fs-5 mt-3">LLM聊天机器人</p>
+                            <span className="fs-6">这是一个简单的AI聊天机器人，接入llama33.1:70b模型。 前端使用React进行部署，后端API使用Ollama。技术栈：Ollama, React, Tailwind CSS </span>
+                            <div>
+                                <button className="btn btn-sm btn-dark rounded-4 me-1" onClick={() => window.open("https://github.com/nickync/chatbot/tree/main/chatbot-frontend", '_blank')}>Frontend</button>
                             </div>
                         </div>
 
